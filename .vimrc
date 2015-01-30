@@ -1,7 +1,6 @@
 set nocompatible
 syntax on
 colorscheme darkblue
-set lines=50 columns=150
 set shiftwidth=2 softtabstop=2 expandtab
 set history=200
 set autoindent
