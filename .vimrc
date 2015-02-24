@@ -19,3 +19,7 @@ set showcmd
 set autoread
 set nobackup
 set noswapfile
+set iminsert=0
+set imsearch=-1
+set backspace=start,eol,indent
+
