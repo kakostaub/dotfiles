@@ -8,7 +8,7 @@ if has('vim_starting')
 endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'davidhalter/jedi-vim'
+"NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'bling/vim-airline'
 call neobundle#end()
 filetype plugin indent on
@@ -43,3 +43,6 @@ set guifont=Consolas:h11
 " vim-airline setting
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
+
+" highlight on double-click
+map <2-LeftMouse> *
