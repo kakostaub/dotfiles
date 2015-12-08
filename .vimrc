@@ -10,6 +10,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 "NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'scrooloose/syntastic'
 call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
@@ -46,3 +47,14 @@ let g:airline#extensions#tabline#enabled = 1
 
 " highlight on double-click
 map <2-LeftMouse> *
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['jshint']
