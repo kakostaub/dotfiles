@@ -1,23 +1,15 @@
-if has('vim_starting')
-  if &compatible
-    set nocompatible               " Be iMproved
-  endif
+set nocompatible               
 
-  " Required:
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
-call neobundle#begin(expand('~/.vim/bundle/'))
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'bling/vim-airline'
-NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
-NeoBundleLazy 'pangloss/vim-javascript', {'autoload':{'filetypes':['javascript']}}
-NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundleLazy 'Raimondi/delimitMate', {'autoload':{'filetypes':['javascript']}}
-call neobundle#end()
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree'
+Plug 'bling/vim-airline'
+Plug 'jelera/vim-javascript-syntax'
+Plug 'pangloss/vim-javascript'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'Raimondi/delimitMate'
+call plug#end()
+
 filetype plugin indent on
-NeoBundleCheck
-
 syntax on
 colorscheme darkblue
 set shiftwidth=2 softtabstop=2 expandtab
