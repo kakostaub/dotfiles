@@ -3,15 +3,14 @@ set nocompatible
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'bling/vim-airline'
-Plug 'jelera/vim-javascript-syntax'
-Plug 'pangloss/vim-javascript'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'Raimondi/delimitMate'
+"Plug 'jelera/vim-javascript-syntax'
+"Plug 'pangloss/vim-javascript'
+"Plug 'nathanaelkane/vim-indent-guides'
 call plug#end()
 
 filetype plugin indent on
 syntax on
-colorscheme darkblue
 set shiftwidth=2 softtabstop=2 expandtab
 set history=200
 set autoindent
@@ -36,11 +35,12 @@ set imsearch=-1
 set backspace=start,eol,indent
 set guifont=Consolas:h11
 
+" highlight on double-click
+map <2-LeftMouse> *
+
 " vim-airline setting
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 
-" highlight on double-click
-map <2-LeftMouse> *
-
-autocmd VimEnter * IndentGuidesEnable
+" delimitMate setting
+let delimitMate_expand_cr = 1
