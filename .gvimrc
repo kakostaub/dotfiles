@@ -6,4 +6,4 @@ set guioptions-=R
 set guioptions-=l
 set guioptions-=L
 set guioptions-=b
-
+colorscheme evening
