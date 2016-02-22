@@ -34,12 +34,18 @@ set iminsert=0
 set imsearch=-1
 set backspace=start,eol,indent
 set guifont=Consolas:h11
+set laststatus=2
+set ttyfast
+set lazyredraw
+set splitbelow
+set splitright
+set cursorline
+set list
 
 " highlight on double-click
 map <2-LeftMouse> *
 
 " vim-airline setting
-set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 
 " delimitMate setting
