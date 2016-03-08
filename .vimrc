@@ -40,7 +40,6 @@ set lazyredraw
 set splitbelow
 set splitright
 set cursorline
-set list
 
 " highlight on double-click
 map <2-LeftMouse> *
