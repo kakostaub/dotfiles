@@ -27,4 +27,5 @@ shopt -q -s cmdhist # Make multiline commands 1 line in history
 alias jdiff="\diff --side-by-side --ignore-case --ignore-blank-lines --ignore-all-space --suppress-common-lines"
 alias mkdir="mkdir -p"
 alias top="top -c"
-alias lsg='ls -alt | grep -i'\n
+alias lsg="ls -t | grep -i"
+alias llg="ls -alt | grep -i"
