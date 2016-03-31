@@ -12,7 +12,7 @@ fi
 
 case "$-" in
   *i*)
-    export PS1="[\u@\h \w \$?]\\$ \[$(tput sgr0)\]"
+    export PS1="\[\e[36m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ "
     ;;
 esac
 
