@@ -39,7 +39,6 @@ set ttyfast
 set lazyredraw
 set splitbelow
 set splitright
-set cursorline
 
 " highlight on double-click
 map <2-LeftMouse> *
