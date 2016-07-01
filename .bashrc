@@ -29,3 +29,7 @@ alias mkdir="mkdir -p"
 alias top="top -c"
 alias lsg="ls -t | grep -i"
 alias llg="ls -alt | grep -i"
+
+if [[ "$(uname)" =~ ^CYGWIN ]]; then
+  cd $USERPROFILE
+fi
