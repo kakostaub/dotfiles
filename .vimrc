@@ -11,7 +11,7 @@ call plug#end()
 
 filetype plugin indent on
 syntax on
-set shiftwidth=2 softtabstop=2 expandtab
+set shiftwidth=4 softtabstop=4 expandtab
 set history=200
 set autoindent
 set clipboard+=unnamed
