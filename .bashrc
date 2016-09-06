@@ -24,11 +24,19 @@ shopt -s histappend # Append rather than overwrite history on exit
 shopt -q -s cmdhist # Make multiline commands 1 line in history
 
 # Alias
+alias ll='ls -l --color=tty'
+alias ls='ls --color=tty'
 alias jdiff="\diff --side-by-side --ignore-case --ignore-blank-lines --ignore-all-space --suppress-common-lines"
 alias mkdir="mkdir -p"
 alias top="top -c"
+alias cd='pushd'
+alias bd='popd'
 alias lsg="ls -t | grep -i"
 alias llg="ls -alt | grep -i"
+alias vi="vim"
+
+# Function
+function fless { cat $1 | tr '\1' '|' | less; }
 
 if [[ "$(uname)" =~ ^CYGWIN ]]; then
   cd "$USERPROFILE"
