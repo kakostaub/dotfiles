@@ -31,5 +31,5 @@ alias lsg="ls -t | grep -i"
 alias llg="ls -alt | grep -i"
 
 if [[ "$(uname)" =~ ^CYGWIN ]]; then
-  cd $USERPROFILE
+  cd "$USERPROFILE"
 fi
